@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Project 2 - Survey Form</title>
+  
+  
+  
+      <link rel="stylesheet" href="./style.css">
+
+  
+</head>
+
+<body>
+
+  <!DOCTYPE html>
+<html>
+  <head>
+    <title>Public Transit Survey Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Montserrat&display=swap" rel="stylesheet">
+  </head>
+  
+  <body>
+    <h1 id="title">Public Transit Survey Form</h1>
+    
+    <div id="intro">
+      <p id="description"> We want to learn about how often you use public transportation and how convenient it is to take public transportation in your town.</p>
+      <p>"Public transportation" refers to local methods of mass transport like buses, rails, subways, and trains. We are NOT referring to personal vehicles or to travel between different cities.</p>
+      <p>* indicates a required question.</p>
+    </div>
+    
+    <form id="survey-form">
+      <div class="question" id="nameDiv">
+        <label id="name-label" for="name">Name*:</label>
+        <input id="name" type="text" placeholder="Your Name" name="name" required>
+      </div>
+      
+      <div class="question" id="emailDiv">
+        <label id="email-label"  for="email">Email*:</label>
+        <input id="email" name="email" type="email" placeholder="Your Email" required>
+      </div>
+      
+      <div class="question" id="townDiv">
+        <label id="city-label"  for="city">City*:</label>
+        <input id="city" name="city" type="text" placeholder="City, State" required>
+      </div>
+
+      <div class="question" id="ageDiv">
+        <label id="age-label" for="age">Which age range do you fall into?</label>
+        <select id="dropdown" name="age">
+        <option>Under 18</option>
+        <option>18-25</option>
+        <option>26-35</option>
+        <option>36-45</option>
+        <option>46-55</option>
+        <option>56-65</option>
+        <option>Over 65</option>
+      </select> 
+      </div>
+      
+      <div class="question" id="licenseDiv">
+        <label for="licenseAndCar">Which best describes your current situation?</label>
+        <select id="dropdown" name="licenseAndCar">
+        <option>I have a driver's license and a car</option>
+        <option>I have a driver's license but no car</option>
+        <option>I don't have a driver's license</option>
+      </select>
+      </div>
+      
+      <div class="question" id="availabilityDiv">
+        <label for="availability">What methods of local public transport are available in your area?</label>
+        <div id="availabilityBoxes">
+        <input name="availability" type="checkbox" value="bus">Bus
+        <input name="availability" type="checkbox" value="tram">Trams/Rail
+        <input name="availability" type="checkbox" value="subway">Subway/Metro/Underground
+        <input name="availability" type="checkbox" value="train">Train
+        <input name="availability" type="checkbox" value="trolley">Trolley
+      </div>
+      </div>
+      
+      <div class="question" "devDiv">
+        <label for="development">What type of area do you live in?</label>
+        <div id="developmentRadios">
+          <input name="development" type="radio" value="urban" checked>Urban/City
+          <input name="development" type="radio" value="suburban">Suburban/Commuter Town
+          <input name="development" type="radio" value="rural">Rural
+        </div>
+      </div>
+      
+      <div class="question" id="timesDiv">
+        <label id="number-label" for="timesPerWeek">How many days a week do you use public transit?</label>
+        <input id="number" name="timesPerWeek" placeholder="Days" type="number" min="0" max="7">
+      </div>
+      
+      <div class="question" id="sentimentDiv">
+        <label for="sentiment">Which of the following, if any, are problems with the public transit in your area?</label>
+        <div id="sentimentBoxes">
+        <input name="sentiment" type="checkbox" value="fewStops">Too few stops
+        <input name="sentiment" type="checkbox" value="manyStops">Too many stops
+        <input name="sentiment" type="checkbox" value="longWait">Long wait times
+        <input name="sentiment" type="checkbox" value="notOnTime">Not on time
+        <input name="sentiment" type="checkbox" value="crowded">Too crowded
+        <input name="sentiment" type="checkbox" value="price">Too expensive
+        <input name="sentiment" type="checkbox" value="far">Too far
+        <input name="sentiment" type="checkbox" value="disability">Doesn't accomodate disabilities
+        <input name="sentiment" type="checkbox" value="noStorage">No space to store personal items or bikes
+        <input name="sentiment" type="checkbox" value="loud">Loud
+        <input name="sentiment" type="checkbox" value="unclean">Unclean/Dirty
+      </div>
+      </div>
+   
+      <div class="question" id="textboxDiv">
+        <label name="comments">If you do not use public transit, what is the biggest factor preventing you from using it? If you do use public transit, what is the biggest issue you'd like to see resolved?</label>
+        <textarea rows="10" cols="50">Enter your answer here...</textarea>
+      </div>
+      
+      <div id="buttonDiv">
+        <input type="submit" id="submit">
+      </div>
+    </form>
+  
+  </body>
+</html>
+
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  
+  
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+html{
+  min-width: 700px;
+  width: 100%;
+  height: 100%;
+  font-size: 12pt;
+  background-color: #E5FAF4;
+}
+
+body{
+  margin: 10% 15%;
+  background-color: #158479;
+  border-radius: 10px;
+  padding: 5vh 5vw;
+}
+
+h1{
+  text-align:center;  
+  color: white;
+  font-family: "Libre Baskerville", serif;
+  text-decoration: underline;
+}
+
+p{
+  color: white;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9em;
+  max-width: 600px;
+  margin: 3vh auto;
+}
+
+form{
+  border-radius: 10px;
+  background-color: #E5FAF4;
+  padding: 5% 5%;
+  margin-top: 5vh;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9em;
+}
+
+.question{
+  display: grid;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  grid-template-columns: 40% 60%;
+  grid-column-gap: 10px;
+}
+
+#availabilityBoxes, #developmentRadios, #sentimentBoxes{
+  display: grid;
+  grid-template-columns: 10% auto;
+}
+
+#submit{
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  color: white;
+  background-color: #158479;
+  padding: 10px 15px;
+  box-shadow: 3px 3px 3px grey;
+}
+#submit:hover{
+  animation-name: buttonHover;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
+}
+@keyframes buttonHover{
+  0%{
+    background-color: #158479;
+  }
+  100%{
+    background-color: #156884;
+    transform: scale(1.05);
+  }
+}
+#buttonDiv{
+  margin-top: 1vh;
+  text-align: center;
+}
